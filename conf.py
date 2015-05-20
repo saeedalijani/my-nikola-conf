@@ -17,7 +17,7 @@ import time
 
 
 # Data about this site
-BLOG_AUTHOR = "سعید علیجاین"  # (translatable)
+BLOG_AUTHOR = "سعید علیجانی"  # (translatable)
 BLOG_TITLE = "اهل گنو"  # (translatable)
 # This is the main URL for your site. It will be used
 # in a prominent link
@@ -221,6 +221,7 @@ TIMEZONE = "UTC"
 POSTS = (
     ("posts/*.rst", "posts", "post.tmpl"),
     ("posts/*.txt", "posts", "post.tmpl"),
+    ("posts/*.md","posts","post.tmpl"),
 )
 PAGES = (
     ("stories/*.rst", "stories", "story.tmpl"),
@@ -264,6 +265,7 @@ COMPILERS = {
     # with many of the others.
     # "pandoc": ('.rst', '.md', '.txt'),
 }
+
 
 # Create by default posts in one file format?
 # Set to False for two-file posts, with separate metadata.
